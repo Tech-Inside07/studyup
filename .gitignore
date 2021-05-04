@@ -1,0 +1,7 @@
+node_modules
+public/sass/home/*.scss
+public/sass/home/*.map
+public/sass/universal/*.scss
+public/sass/universal/*.map
+public/sass/hbs/*.scss
+public/sass/hbs/*.map

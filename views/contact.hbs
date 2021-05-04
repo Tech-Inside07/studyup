@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    {{>top}}
+    <link rel="stylesheet" href="sass/home/material.css">
+</head>
+<body>
+    {{>nav}}
+    <section id="contact-form">
+     <div class="separator text-center" id="separator2">Stay In Touch </div>
+      <div class="container-fluid3 text-center">
+        <div class="top">
+          <img src="img/sign_in.png" alt="" srcset="">
+        </div>
+        <div class="bottom">
+          <form action="backend222.js" autocomplete="off">
+            <input type="text" name="myText" id="userText" placeholder="Enter your name">
+            <input type="email" name="myEmail" id="userEmail" placeholder="Enter your email">
+            <div class="checkbox">
+              <input type="checkbox" name="Student" id="is-student" value="Student">
+              {{!-- hshshsh --}}
+              <label for="is-student" id="is-student">Student</label>
+            <input type="checkbox" name="Teacher" id="is-teacher" value="Teacher">
+            <label for="is-teacher">Teacher</label>
+          </div>
+          <div class="message-box">
+            <p class="text-center text-capitalise" style="font-size: 1.8rem;">Enter Your message</p>
+            <textarea name="message" id="userQuery" cols="120" rows="10"></textarea>
+          </div>
+          <div class="btn-group2">     
+            <input type="submit" value="Submit" id="submitBtn" class="funbtn">
+            <input type="reset" value="Reset" class="funbtn">
+          </div>  
+          </form>
+        </div>
+      </div>
+   </section>
+</body>
+{{>bottom}}
+</html>

@@ -1,0 +1,147 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+  image-rendering: optimizeSpeed;
+}
+
+body {
+  background-color: #212529 !important;
+}
+
+img {
+  image-rendering: optimizeSpeed;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+nav {
+  font-size: 1.9rem;
+  margin: auto;
+  height: 18vh;
+  width: 90vw;
+}
+
+nav img {
+  height: 10rem;
+}
+
+.navbar-brand {
+  margin-left: 9px;
+  margin-top: 4px;
+  color: #fff;
+}
+
+.navbar-brand span {
+  color: #2ecc71;
+  margin-left: 2px;
+}
+
+.navbar-nav {
+  position: absolute;
+  right: 37px;
+  top: 40%;
+}
+
+.nav-item {
+  width: 7.9vw;
+}
+
+.nav-item a {
+  text-decoration: none;
+  color: #fff;
+  letter-spacing: 1px;
+  font-size: 1.8rem;
+}
+
+.nav-item a::before {
+  content: "";
+  position: absolute;
+  -webkit-transform: translateX(-3px);
+  transform: translateX(-3px);
+  height: 2px;
+  width: 0%;
+  background-color: #fff;
+  top: 85%;
+  -webkit-transition: width 0.5s;
+  transition: width 0.5s;
+}
+
+.nav-item a:hover {
+  color: #e74c3c;
+}
+
+.nav-item a:hover::before {
+  width: 18%;
+}
+
+.about {
+  margin-left: 10px;
+}
+
+.navbar-toggler {
+  font-size: 1.7rem;
+}
+
+.container-fluid .navbar-brand {
+  font-size: 2.5rem;
+}
+
+.button a {
+  text-decoration: none;
+  color: #fff;
+}
+
+@media only screen and (max-width: 986px) {
+  .navbar-collapse {
+    position: absolute;
+    right: -40px;
+    margin-top: 24px;
+    font-size: 2.5rem;
+  }
+  .navbar-toggler-icon {
+    font-size: 2.5rem;
+  }
+  .navbar-toggler {
+    background-color: #0984e3 !important;
+    border-radius: 6px !important;
+  }
+  .nav-item {
+    width: 100%;
+  }
+  .nav-item a:hover {
+    color: #fff;
+  }
+  .nav-item a::before {
+    display: none;
+  }
+  .navbar-nav {
+    margin-top: 10px;
+  }
+  .nav-item {
+    margin-top: 10px;
+  }
+  .about {
+    margin-left: 0;
+  }
+  .container-fluid .navbar-brand {
+    font-size: 3.5rem;
+  }
+}
+
+@media only screen and (max-width: 490px) {
+  .navbar-toggler-icon {
+    font-size: 2.2rem;
+  }
+  .navbar-collapse {
+    margin-right: 8px;
+  }
+  .container-fluid .navbar-brand {
+    font-size: 3.2rem;
+  }
+}
+/*# sourceMappingURL=font.css.map */
