@@ -273,6 +273,12 @@ input[type=email] {
   }
 }
 
+@media screen and (max-height: 381px) {
+  #study-material {
+    margin-top: 20rem;
+  }
+}
+
 @media only screen and (max-width: 483px) {
   #userQuery {
     width: 35rem;
