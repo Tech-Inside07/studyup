@@ -9,10 +9,11 @@ const zone=document.querySelector('.zone');
 const register=document.querySelector('.registration');
 const selectBtn=document.querySelector('.go')
 const junior=document.querySelector('.junior')
-const hauts=document.querySelector('.hauts')
+const hauts=document.querySelector('.hauts');
 
-const searcher=document.getElementById('searcherBar');
-const searcherBtn=document.querySelector('.searcherBtn');
+
+// const searcher=document.getElementById('searcherBar');
+// const searcherBtn=document.querySelector('.searcherBtn');
 // adding Event listiener
 getInform.addEventListener('click',()=>{
     zone.innerHTML="<u>Details</u>"
@@ -43,3 +44,4 @@ selectBtn.addEventListener('click',()=>{
       hauts.style.display="block"
   }
 })
+

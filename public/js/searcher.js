@@ -1,4 +1,3 @@
-
 // targeting the Element
 const searcher=document.getElementById('searcherBar');
 const searcherBtn=document.querySelector('.searcherBtn');
@@ -6,7 +5,11 @@ const card=document.querySelectorAll('.card');
 const hide=document.querySelector('.hide');
 const main=document.querySelector('.cardContainer');
 const hidePara=document.querySelector('.hidepara')
+
 blockCount=0;
+
+
+
 const cardModifier=()=>{
     card.forEach(element=>{
         let data=element.getAttribute('data-value');
@@ -52,3 +55,4 @@ else{
     hide.style.display='block'
 }
 },1000);
+

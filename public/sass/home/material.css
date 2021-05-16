@@ -171,7 +171,11 @@ input[type=email] {
   border-bottom: 1px solid white;
   outline: none;
   color: #fff;
-  text-transform: capitalize;
+}
+
+.gmail-service {
+  margin-top: 25px;
+  color: #fff;
 }
 
 #containerSearcher {
@@ -251,6 +255,18 @@ input[type=email] {
   font-weight: 700;
   display: none;
   margin-top: 2rem;
+}
+
+.gmailSend {
+  background-color: #3498db;
+  margin-top: 20px;
+  height: 6.5vh;
+  width: 6%;
+  color: #fff;
+  border-radius: 10%;
+  font-size: 1.8rem;
+  font-weight: 700;
+  border: 1px solid #fff;
 }
 
 @media only screen and (max-width: 990px) {
