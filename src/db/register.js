@@ -15,6 +15,10 @@ const userRegistration = new mongoose.Schema({
             }
         }
     },
+    userPassword:{
+        type:String,
+        required:true
+    },
     belongs:{
         type:String,
     },

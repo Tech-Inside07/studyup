@@ -1,0 +1,61 @@
+.container-fluid3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 80vh;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container-fluid3 img {
+  height: 30rem;
+}
+
+.contact-login {
+  background-color: #2ecc71;
+  width: 12rem;
+  height: 3.5rem;
+  font-size: 1.4rem;
+  text-transform: capitalize;
+  display: block;
+  border: 1.8px solid #fff;
+  margin: 43px;
+}
+
+.contact-login a {
+  color: #fff;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 991px) {
+  .container-fluid3 img {
+    height: 26rem;
+  }
+  .contact-login {
+    width: 14rem;
+    height: 4rem;
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (max-width: 468px) {
+  .container-fluid3 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .container-fluid3 img {
+    height: 22rem;
+  }
+  .contact-login {
+    margin: 0px 27px 28px -5px;
+    width: 12rem;
+    height: 4rem;
+    font-size: 1.8rem;
+  }
+}
+/*# sourceMappingURL=contact.css.map */

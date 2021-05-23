@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="sass/home/header.css">
     <link rel="stylesheet" href="sass/home/material.css">
     <link rel="stylesheet" href="sass/home/footer.css">
+    <link rel="stylesheet" href="sass/home/contact.css">
     <!-- bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
     <!-- google font -->
@@ -44,7 +45,7 @@
                 <a class="nav-a about" href="/about">About</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-a" href="/contact">Contact</a>
+                  <a class="nav-a" href="/register">Contact</a>
                 </li>
                 
               </ul>
@@ -151,41 +152,20 @@
     </main>
     
   </section>
-
-  <section id="contact-form">
-    <div class="separator text-center" id="separator2">Stay In Touch </div>
-    <div class="container-fluid3 text-center">
-      <div class="top">
+  
+  <section id="contact-page">
+    <div class="separator text-center">Stay In Touch</div>
+    <div class="container-fluid3">
+      <div class="left-link">
         <img src="img/sign_in.png" alt="" srcset="">
       </div>
-      <div class="bottom">
-        <form action="/register" autocomplete="off" method="POST">
-          <input type="text" name="myName" id="userText" placeholder="Enter your name" required>
-          <input type="email" name="myEmail" id="userEmail" placeholder="Enter your email" required>
-          <div class="checkbox">
-            <input type="checkbox" name="type" id="is-student" value="Student">
-            <label for="is-student" id="is-student">Student</label>
-            <input type="checkbox" name="type" id="is-teacher" value="Teacher">
-            <label for="is-teacher">Teacher</label>
-          </div>
-          <div class="btn-group2">   
-            <input type="submit" value="Submit" id="submitBtn" class="funbtn">
-            <input type="reset" value="Reset" class="funbtn">  
-          </div>  
-        </form>
-        <div class="gmail-service">
-          <div class="message-box">
-            <p class="text-center text-capitalise" style="font-size: 1.8rem;">Enter Your message</p>
-            <textarea name="message" id="userQuery" cols="120" rows="10"></textarea>
-            <div>
-              <button class="text-center gmailSend">Send</button>
-            </div>
-          </div>
-          
-        </div>
+      <div class="right-link">
+        <button id="contact-register" class="contact-login"><a href="/register">register</a></button>
+        <button id="contact-login" class="contact-login"><a href="/register">login</a></button>
       </div>
     </div>
-   </section>
+  </section>
+ 
    <footer>
      <div class="study-animation">
        <div class="study-animation-image">
