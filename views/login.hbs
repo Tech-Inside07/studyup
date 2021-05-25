@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {{>top}}
+    <link rel="stylesheet" href="sass/hbs/contact.css">
+    <title>login</title>
+</head>
+
+<body>
+    {{>nav}}
+    <div class="container text-center">
+        <div class="top">
+            <img src="img/logo.png" alt="" srcset="">
+        </div>
+        <div class="bottom">
+            <form action="/register" method="post">
+                <input type="text" name="" id="userName" placeholder="Username or Gmail" required>
+                <input type="password" name="" id="userPassword" placeholder="Password" required>
+                <input type="submit" value="Login">
+            </form>
+        </div>
+    </div>
+ <p class="register-para text-center"><a href="/register">New to Studyup ??</a></p>
+
+</body>
+{{>bottom}}
+
+</html>

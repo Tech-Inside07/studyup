@@ -6,12 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
     {{>top}}
-    <link rel="stylesheet" href="sass/home/material.css">
+    <link rel="stylesheet" href="sass/hbs/contact.css">
 </head>
 <body>
     {{>nav}}
-     
- 
+     <div class="container text-center">
+         <div class="top ">
+             <img src="img/logo.png" alt="" srcset="">
+         </div>
+         <div class="bottom">
+             <form action="/register" method="post">
+             <input type="text" name="" id="userName" placeholder="Username" required>
+             <input type="email" name="" id="userGmail" placeholder="Gmail" required>
+             <input type="password" name="" id="userPassword" placeholder="Password" required>
+             <input type="password" name="" id="userConfirmPassword" placeholder="Confirm Password" required>
+             <div>
+                 <input type="submit" value="Register">
+             </div>
+             </form>
+         </div>
+     </div>
+     <p class="login-para text-center"><a href="/login">Already have an account ??</a></p>
 </body>
 {{>bottom}}
 </html>
