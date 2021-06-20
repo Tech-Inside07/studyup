@@ -10,62 +10,88 @@
 </head>
 <body>
     {{>nav}}
-     <section id="study-material" style="margin-top: 30px;">
+ <section id="study-material" style="margin-top: 30px;">
      <div class="separator text-center" id="separator1">Study Material</div>
-
-    <main class="text-center">
-      <div class="card image1" id="class-6" data-aos="fade-right" data-aos-duration="2000">
-        <img src="img/class_6.png" class="card-img-top" alt="...">
+     
+     <div class="search text-center" id="containerSearcher">
+       <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" id="searcherBar">
+       <button class="btn btn-outline-success searcherBtn" type="submit">Search</button>
+      </div>
+      <main class="text-center cardContainer">
+        <div class="hide">
+        <p class="text-center hidepara">Nothing to See here</p>
+      </div>
+      <div class="card " data-value="Foundation" data-value2="Foundation"  id="image1" data-aos="fade-right" data-aos-duration="1200">
+        <img src="img/foundation.jpg" class="card-img-top" alt="...">
         <div class="card-body">
-          <h5 class="card-title">class-6</h5>
-          <p class="card-text">get free book and notes solution of ncert,reference book and question bank </p>
-          <a href="#" class="btn btn-primary">see more</a>
+          <h5 class="card-title">foundation book</h5>
+          <p class="card-text">get free iit foundation, prmo book nsejs book and many more</p>
+          <a href="foundation.html" class="btn btn-primary">see more</a>
+        </div>
+      </div>
+      
+      <div class="card" data-value="National Science Talent Search Examination" data-value2="Nstse" id="image2" data-aos="fade-right" data-aos-duration="1200">
+        <img src="img/Nstse.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">NSTSE</h5>
+          <p class="card-text">get free study materail, PYQS and boost your preparation</p>
+          <a href="Nstse.html" class="btn btn-primary">see more</a>
+        </div>
+      </div>
+      
+      <div class="card nsejs" data-value="International Junior Science Olymiad" data-value2="Ijso" data-value3='Nsejs' id="image3" data-aos="fade-right" data-aos-duration="1200">
+        <img src="img/IJSO.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">IJSO</h5>
+          <p class="card-text">get free study materail, PYQS and boost your preparation</p>
+          <a href="ijso.html" class="btn btn-primary">see more</a>
+        </div>
+      </div>
+      
+      
+      <div class="card" data-value="National Talent Search Examination" data-value2="Ntse" id="image4" data-aos="fade-right" data-aos-duration="1200">
+        <img src="img/ntse.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">NTSE</h5>
+          <p class="card-text">get free study materail, PYQS and boost your preparation</p>
+          <a href="Ntse.html" class="btn btn-primary">see more</a>
+        </div>
+      </div>
+      
+      
+      <div class="card imo" data-value="International Math Olymiad" data-value2="Sof Math Olymiad" id="image5" data-aos="fade-right" data-aos-duration="1200">
+        <img src="img/IMO.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">IMO</h5>
+          <p class="card-text">get free study materail, PYQS and boost your preparation</p>
+          <a href="sof_math.html" class="btn btn-primary">see more</a>
+        </div>
+      </div>
+      
+      
+      <div class="card image6" data-value="International Science Olymiad" data-value2="Sof Science Olymiad" id="image6" data-aos="fade-right" data-aos-duration="1200">
+        <img src="img/Sof.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">SOF SCIENCE</h5>
+          <p class="card-text">get free study materail, PYQS and boost your preparation</p>
+          <a href="sof_science.html" class="btn btn-primary">see more</a>
         </div>
       </div>
 
-
-      <div class="card" id="class-7" data-aos="fade-right" data-aos-duration="2000">
-        <img src="img/class_7.png" class="card-img-top" alt="...">
+      <div class="card" data-value="Technolthlon" data-value2="Technothlon" id="image7" data-aos="fade-right" data-aos-duration="1200">
+        <img src="img/Tech.png" class="card-img-top" alt="...">
         <div class="card-body">
-          <h5 class="card-title">class-7</h5>
-          <p class="card-text">get free book and notes  solution of ncert,reference book and question bank</p>
-          <a href="#" class="btn btn-primary">see more</a>
+          <h5 class="card-title">technothlon</h5>
+          <p class="card-text">get free study materail, PYQS and boost your preparation</p>
+          <a href="technothlon.html" class="btn btn-primary">see more</a>
         </div>
       </div>
-
-
-      <div class="card" id="class-8" data-aos="fade-right" data-aos-duration="2000">
-        <img src="img/class_8.png" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">class-8</h5>
-          <p class="card-text">get free book and notes solution of ncert,reference book and question bank</p>
-          <a href="#" class="btn btn-primary">see more</a>
-        </div>
-      </div>
-
-
-      <div class="card image4" id="class-9" data-aos="fade-right" data-aos-duration="2000">
-        <img src="img/class_9.png" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">class-9</h5>
-          <p class="card-text">get free notes of ncert,reference book and strength your foundation</p>
-          <a href="#" class="btn btn-primary">see more</a>
-        </div>
-      </div>
-
-
-      <div class="card image5" id="class-10" data-aos="fade-right" data-aos-duration="2000">
-        <img src="img/class_10.png" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">class-10</h5>
-          <p class="card-text">Get free resource of ncert,reference-book and competitive exam </p>
-          <a href="#" class="btn btn-primary">see more</a>
-        </div>
-      </div>
-
+      
+      
     </main>
-
-   </section>
+    
+  </section>
 </body>
 {{>bottom}}
+<script src="js/searcher.js"></script>
 </html>

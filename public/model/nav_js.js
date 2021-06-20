@@ -14,11 +14,11 @@ const nav=` <nav class="navbar navbar-expand-lg navbar-dark bg-dark" data-aos="f
       <li class="nav-item">
         <a class="nav-a" aria-current="page" href="/">Home</a>
       </li>     
+      <li class="nav-item">
+        <a class="nav-a" aria-current="page" href="/material">Material</a>
+      </li>     
         <li class="nav-item">
-          <a class="nav-a about" href="/about">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-a" href="/contact">Contact</a>
+          <a class="nav-a" href="/request-course">Request-Course</a>
         </li>
 
     </ul>

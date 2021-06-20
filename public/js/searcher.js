@@ -5,7 +5,7 @@ const card=document.querySelectorAll('.card');
 const hide=document.querySelector('.hide');
 const main=document.querySelector('.cardContainer');
 const hidePara=document.querySelector('.hidepara')
-
+const contactForm=document.getElementById('contact-page');
 blockCount=0;
 
 
@@ -55,4 +55,10 @@ else{
     hide.style.display='block'
 }
 },1000);
+
+const localStorageValue=localStorage.getItem('Authentication');
+if (localStorageValue=="true") {
+    contactForm.style.display="none";
+}
+
 

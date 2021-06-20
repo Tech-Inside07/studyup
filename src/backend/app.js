@@ -1,40 +1,37 @@
+// require('dotenv').config();
 const express=require('express');
 const app=express();
-const path=require('path');
 const hbs=require('hbs');
-const port=process.env.PORT||8000;
-require('../db/conn');
-const dbRouter=require('../router/userRouter')
+const port=process.env.PORT||8000
+const path=require("path");
 
-const staticPath=path.join(__dirname,('../../public'));
-const templatePath=path.join(__dirname,('../../views/templates'))
+const staticPath=path.join(__dirname,"../../public");
+const templatePath=path.join(__dirname,"../../views/templates");
+require("../db/conn")
+const dbRouter=require('../router/userRouter');
 
-app.use(express.static(staticPath));
-app.use(express.json());
-app.use(express.urlencoded({extended:false}))
-app.use(dbRouter);
-app.set('view engine','hbs')
+
+console.log(staticPath);
+app.set("view engine","hbs")
 hbs.registerPartials(templatePath)
+app.use(express.static(staticPath))
+app.use(express.json());
+app.use(express.urlencoded({extended:false}));
+app.use(dbRouter);
 
-app.get('/',(req,res)=>{
-    res.send('some error occur');
+
+app.get("/",(req,res)=>{
+    res.send('hellp')
 })
-app.get('/about',(req,res)=>{
-    res.render("about")
-})
-app.get('/register',(req,res)=>{
-    res.render("register")
-})
-app.get('/login',(req,res)=>{
-    res.render('login')
+app.get("/request-course",(req,res)=>{
+    res.render('request-course')
 })
 app.get('/material',(req,res)=>{
-    res.render("material")
+    res.render("material");
 })
-app.get("*",(req,res)=>{
+app  .get('*',(req,res)=>{
     res.render("error")
 })
-
 app.listen(port,()=>{
-    console.log(`listening at port no ${port}`);
+    console.log(`listening to port no ${port}`);
 })

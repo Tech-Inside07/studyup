@@ -15,18 +15,18 @@
              <img src="img/logo.png" alt="" srcset="">
          </div>
          <div class="bottom">
-             <form action="/register" method="post">
-             <input type="text" name="" id="userName" placeholder="Username" required>
-             <input type="email" name="" id="userGmail" placeholder="Gmail" required>
-             <input type="password" name="" id="userPassword" placeholder="Password" required>
-             <input type="password" name="" id="userConfirmPassword" placeholder="Confirm Password" required>
+             <form action="/register" method="post" autocomplete="off">
+             <input type="text" name="name" id="userName" placeholder="Username" required>
+             <input type="email" name="gmail" id="userGmail" placeholder="Gmail" required>
+             <input type="text" name="course" id="userCourse" placeholder="Enter Your Course" required>
+             <textarea name="message" id="userMessage" cols="50" rows="10" placeholder="Enter Your Message About Course"></textarea>
              <div>
-                 <input type="submit" value="Register">
+                 <input type="submit" value="Submit" id="submitBtn">
              </div>
              </form>
          </div>
      </div>
-     <p class="login-para text-center"><a href="/login">Already have an account ??</a></p>
 </body>
+<script src="js/button.js"></script>
 {{>bottom}}
 </html>

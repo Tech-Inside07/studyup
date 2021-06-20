@@ -1,32 +1,30 @@
-const mongoose=require('mongoose')
+const mongoose=require('mongoose');
 const validator=require('validator');
 
-const userRegistration = new mongoose.Schema({
+const userRegistration=new mongoose.Schema({
     userName:{
         type:String,
-        trim:true
+        trim:true,
+        require:true
     },
-    userEmail:{
+    userGmail:{
         type:String,
-        unique:true,
+        require:true,
         validate(value){
             if (!validator.isEmail(value)) {
                 throw new Error('Invalid Email')
             }
         }
     },
-    userPassword:{
+    userCourse:{
         type:String,
-        required:true
+        trim:true
     },
-    belongs:{
+    userMessage:{
         type:String,
-    },
-    Date:{
-        type:Date,
-        default:Date.now
+        trim:true
     }
-})
-const user=new mongoose.model('User',userRegistration)
+});
 
-module.exports= user;
+const user=new mongoose.model('User',userRegistration);
+module.exports=user;
