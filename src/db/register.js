@@ -10,6 +10,7 @@ const userRegistration=new mongoose.Schema({
     userGmail:{
         type:String,
         require:true,
+        unique:false,
         validate(value){
             if (!validator.isEmail(value)) {
                 throw new Error('Invalid Email')

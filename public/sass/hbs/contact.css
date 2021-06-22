@@ -72,6 +72,10 @@ textarea {
   border-radius: 8px;
 }
 
+.alert-success {
+  font-size: 1.4rem;
+}
+
 @media screen and (max-width: 972px) {
   .container img {
     height: 16rem;
@@ -93,6 +97,9 @@ textarea {
 @media screen and (max-width: 543px) {
   input {
     width: 62vw;
+  }
+  textarea {
+    width: 33rem;
   }
 }
 

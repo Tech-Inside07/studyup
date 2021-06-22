@@ -2,7 +2,7 @@ const express=require('express')
 const router=new express.Router();
 const user=require('../db/register');
 
-router.post("/register",async(req,res)=>{
+router.post("/request-course",async(req,res)=>{
     try {
             const newUser=new user({
                 userName:req.body.name,
