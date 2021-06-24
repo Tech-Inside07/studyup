@@ -8,11 +8,14 @@
       -ms-flex-direction: column;
           flex-direction: column;
   margin-bottom: 18rem;
+  z-index: 1;
+  position: relative;
 }
 
 .separator {
   color: #fff;
   font-size: 3rem;
+  z-index: -1;
 }
 
 main {
@@ -110,12 +113,11 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-top: 17px;
+  z-index: -1;
 }
 
 #searcherBar {
@@ -181,7 +183,7 @@ main {
   }
 }
 
-@media only screen and (max-width: 487px) {
+@media only screen and (max-width: 500px) {
   main {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -194,6 +196,9 @@ main {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+  #study-material {
+    margin-bottom: 0rem;
   }
 }
 /*# sourceMappingURL=material.css.map */

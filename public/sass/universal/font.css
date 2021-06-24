@@ -24,10 +24,11 @@ nav {
   margin: auto;
   height: 18vh;
   width: 90vw;
+  z-index: 10;
 }
 
 nav img {
-  height: 10rem;
+  height: 9rem;
 }
 
 .navbar-brand {
@@ -143,13 +144,13 @@ nav img {
 
 @media only screen and (max-width: 490px) {
   .navbar-toggler-icon {
-    font-size: 2.2rem;
+    font-size: 2rem;
   }
   .navbar-collapse {
     margin-right: 8px;
   }
   .container-fluid .navbar-brand {
-    font-size: 3.2rem;
+    font-size: 2.2rem;
   }
 }
 /*# sourceMappingURL=font.css.map */

@@ -9,15 +9,14 @@
     <link rel="stylesheet" href="sass/hbs/contact.css">
 </head>
 <body>
-    <div class="alert-zone">
-        
-    </div>
+
     {{>nav}}
-     <div class="container text-center">
+     <div class="container-fluid2 text-center">
          <div class="top ">
              <img src="img/logo.png" alt="" srcset="">
          </div>
-         <div class="bottom">
+                 <div class="alert-zone text-center"></div>
+         <div class="bottom container">
              <form action="/request-course" method="post" autocomplete="off">
              <input type="text" name="name" id="userName" placeholder="Username" required>
              <input type="email" name="gmail" id="userGmail" placeholder="Gmail" required>
